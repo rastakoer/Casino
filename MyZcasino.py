@@ -12,9 +12,12 @@ import matplotlib.pyplot as plt
 print("-------------------------------------------")
 print("----Point METEO avec api openweathermap----")
 print("-------------------------------------------")
-
+"""
 #requete du temps actuel sur Caen
-req = requests.get("https://api.openweathermap.org/data/2.5/weather?q=Caen,fr&units=metric&APPID=91b573c4dc059854aa81154c3210a185")
+req = requests.get("https://api.openweathermap.org/data/2.5/weather?q=Caen,fr&units=metric&APPID=xxxx")
+
+### Remplacer les xxxx par votre clé api obtenue sue openwhethermap
+
 
 #on transforme la requête en dataframe
 reponse = req.json()
@@ -28,7 +31,7 @@ vent = df.at[0, 'wind.speed']
 #affichage
 print("\n\nla température à Caen est de", temperature,"degrés et le vent souffle à", vent, "km/h")
 print("Installez vous confortablement pour une partie de Roulette !!!\n\n")
-
+"""
 #---------------------------------------------------------
 # Programme du jeu
 #-------------------------------------------------------
